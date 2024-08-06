@@ -1,0 +1,71 @@
+<div class="dropdown">
+    <section class="preview">
+        <input class="btnReset" type="reset" name="" id="">
+        <div class="card">
+            <nav>
+                <ul class="card__pet">
+                    <li><img class="card__pet--photo" src="https://img.freepik.com/foto-gratis/retrato-primer-plano-perro-chihuahua-mirando-otro-lado_23-2148326273.jpg?size=338&ext=jpg" alt=""></li>
+                    <li><h3>NOMBRE</h3></li>
+                    <li><p>12 años</p></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="card__details">
+                    <li class="card__details">M/F</li>
+                    <li class="card__details">Tamaño</li>
+                    <li class="card__details">C/NC</li>
+                </ul>
+            </nav>
+            <p class="card__email">estoescorreoprueba@gmail.com</p>
+        </div>
+    </section>
+    <section class="formData">
+        <article>
+            <h2 class="drop">RELLENA</h2>
+            <form class="form" action="">
+                <label for="imagen">Foto mascota</label>
+                <input type="file" id="imagen" name="imagen" accept="image/*" required>
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" placeholder="nombre mascota" required>
+                <label for="age">Edad</label>
+                <input type="number" name="age" id="age" placeholder="0" required>
+                <label for="sexo">Sexo</label>
+                    <select name="sexo" id="sexo" required>
+                        <option>elige opción</option>
+                        <option>Macho</option>
+                        <option>Hembra</option>
+                    </select>
+                <label for="tamaño">Tamaño</label>
+                    <select name="tamaño" id="tamaño" required>
+                        <option>elige opción</option>
+                        <option>Pequeño &lt;10kg</option>
+                        <option>Mediano 10-25kg</option>
+                        <option>Hembra >25kg</option>
+                    </select>
+                <h4>¿Está castrado?</h4>
+                <div>
+                    <label for="">Si</label>
+                    <input type="radio" name="castrado" id="castrado-yes" value="yes" required>
+                </div>
+                <div>
+                    <label for="">No</label>
+                    <input type="radio" name="castrado" id="castrado-no" value="no" required>
+                </div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="example@example.com" required>
+                <input type="submit" name="" id="">
+            </form>
+        </article>
+        <article class="share">
+            <h2 class="drop">COMPARTE</h2>
+            <div class="share__create">
+                <button class="share__create--btnCreate">CREAR TARJETA</button>
+                <h4 class="share__create--notice">La tarjeta ha sido creada:</h4>
+                <a class="share__create--url" href="https://adalab.es/">https://adalab.es/</a>
+                <button class="share__create--twitter">
+                    <a href="https://adalab.es/">Compartir en Twitter</a>
+                </button>
+            </div>
+        </article>
+    </section>
+</div>
