@@ -80,8 +80,10 @@
             &--p {
                margin-bottom: 10px;
                margin-top: 10px;
+               padding: 10px;
                @media(min-width: 768px){
                 font-size: 18px;
+                padding: 10px;
             }
             }
            
