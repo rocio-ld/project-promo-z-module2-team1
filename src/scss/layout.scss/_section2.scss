@@ -41,11 +41,43 @@
       
         }
             
+        }
+
+.ulmenu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-family: $font;
+    align-items: center;
+    color: rgb(116,76,36);
+    background-color: rgb(235, 229, 204);
+       
+        &__li {
+            color: rgb(116,76,36);
+            background-color: rgb(240, 233, 206);
+            border-color: rgb(116,76,36); 
+            border: 2px solid;
+            width: 100%;
+           
+            &--h4 {
+                text-align: center;
+               
+                }
+           
+            }
+        }
+
             
 
 
-        }
+.titlemenu {
+    color: rgb(116,76,36);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
 
-        
-   
+      
+}
+
+
 
