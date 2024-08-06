@@ -1,0 +1,45 @@
+.divsection {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: $font;
+    gap: 10px;
+   
+
+        &__art {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+             
+            
+            
+
+            &--img1 {
+                width: 500px;
+                
+
+            }
+            &--img2 {
+                width: 700px;
+            }
+            &--h3 {
+                color: rgb(116,76,36);
+            }
+            &--p {
+                color: rgb(116,76,36);
+            }
+        
+      
+        }
+            
+            
+
+
+        }
+
+        
+   
+
