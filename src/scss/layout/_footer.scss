@@ -1,0 +1,39 @@
+.footer{
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-end;
+    border-top: solid $font-color;
+
+    &__copy{
+        color: $font-color;
+        font-size: 10px;
+        font-family: $font;
+        padding-left: 10px;
+        padding-bottom: 10px;
+
+        &--log{
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            border-radius: 15px;
+            box-shadow: 4px 4px 10px;
+            width: 150px;
+        }
+        
+    }
+    
+}
+
+
+.list{
+    &__link{
+        list-style: none;
+        &--li {
+            text-decoration: none;
+            color: $font-color;
+        }
+        
+
+    }
+
+}

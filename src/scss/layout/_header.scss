@@ -1,0 +1,45 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px; 
+    border-bottom: solid $font-color;
+    
+}
+.log{
+    
+    &__img{
+        border-radius: 15px;
+        box-shadow: 4px 4px 10px;
+        width: 150px;
+        
+        
+    } 
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    font-family: $font;
+    
+    
+    &__link {
+        text-decoration: none;
+        color: $font-color;
+        font-size: 12px;
+        font-weight: bold;
+     
+        
+    }
+      
+}
+
+
+
+
+
+
