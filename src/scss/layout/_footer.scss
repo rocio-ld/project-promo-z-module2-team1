@@ -2,38 +2,55 @@
     display: flex;
     justify-content:space-between;
     align-items: flex-end;
-    border-top: solid $font-color;
-
-    &__copy{
+    background-color: $font-color;
+    padding-bottom: 34px;
+    
+   /* &__copy{
+        display: flex;
+        flex-direction: column;
         color: $font-color;
         font-size: 10px;
         font-family: $font;
         padding-left: 10px;
-        padding-bottom: 10px;
+        padding-bottom: 10px;*/
 
-        &--log{
-            display: flex;
-            flex-direction: column;
-            width: 200px;
-            border-radius: 15px;
-            box-shadow: 4px 4px 10px;
-            width: 150px;
-        }
-        
+      
     }
+
+
+
+    .logoCan{
+        width:150px;
+        border-radius: 15px;
+        box-shadow: 4px 4px 10px;
+        width: 150px;
+    }
+    
+    
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    color: $font-color;
+    font-size: 10px;
+    font-family: $font;
+    padding-left: 10px;
+    padding-bottom: 10px;
     
 }
 
+.links{
+    list-style: none;
+    
+    &--li {
 
-.list{
-    &__link{
-        list-style: none;
-        &--li {
-            text-decoration: none;
-            color: $font-color;
-        }
-        
-
+        text-decoration: none;
+        color: $font-color;
+        color: beige;
     }
+    
 
 }
+
+
