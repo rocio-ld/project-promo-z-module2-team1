@@ -1,0 +1,23 @@
+.photo{
+  height: 100vh;
+  width: 100%;
+  background-image: './images/grupo-perros.jpg';
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  }
+
+  .title {
+    display: flex;
+    font-size: 3em;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    box-sizing: border-box;
+    
+  }
+
+  .texto {
+    padding: 20px;
+  }
