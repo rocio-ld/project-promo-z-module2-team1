@@ -8,6 +8,8 @@ const nameInput = document.querySelector ('.js-name');
 const title= document.querySelector ('.js-title');
 const ageInput = document.querySelector ('.js-age');
 const ageCard = document.querySelector ('.js-age-card');
+const sizeInput = document.querySelector ('.js-size');
+const sizeCard = document.querySelector ('.js-size-card');
 //escuchar el evento relacionandola con la funcion,declarar la funcion handleInputName y hallar el valor , y para pintarlo en la tarjeta buscar el title en html y añadirla con innerHTML.
 
 function handleInputName () {
@@ -28,3 +30,12 @@ function handleInputSex () {
     sexCard.innerHTML=valueSex;
 }
 sexInput.addEventListener ('input', handleInputSex);
+
+function handleInputSize (){
+    const valueSize = sizeInput.value;
+    sizeCard.innerHTML = valueSize;
+    console.log ('hi')
+}
+sizeInput.addEventListener ('input', handleInputSize);
+
+
