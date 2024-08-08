@@ -13,5 +13,4 @@ function handleInputName () {
     title.innerHTML = valueName;
 }
 
-
 nameInput.addEventListener ('input', handleInputName);
