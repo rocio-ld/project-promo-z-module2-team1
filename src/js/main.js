@@ -30,4 +30,3 @@ function handleInputSex () {
     sexCard.innerHTML=valueSex;
 }
 sexInput.addEventListener ('input', handleInputSex);
--
