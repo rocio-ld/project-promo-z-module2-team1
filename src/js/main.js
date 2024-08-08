@@ -22,3 +22,9 @@ function handleInputAge () {
     ageCard.innerHTML = valueAge + '' + `años`;
 }
 ageInput.addEventListener ('input', handleInputAge);
+
+function handleInputSex () {
+    const valueSex =sexInput.value;
+    sexCard.innerHTML=valueSex;
+}
+sexInput.addEventListener ('input', handleInputSex);
