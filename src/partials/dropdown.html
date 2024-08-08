@@ -6,7 +6,7 @@
                 <ul class="card__pet">
                     <li><img class="card__pet--photo" src="https://img.freepik.com/foto-gratis/retrato-primer-plano-perro-chihuahua-mirando-otro-lado_23-2148326273.jpg?size=338&ext=jpg" alt=""></li>
                     <li><h3 class="js-title">NOMBRE</h3></li>
-                    <li><p>12 años</p></li>
+                    <li><p class="js-age-card">12 años</p></li>
                 </ul>
             </nav>
             <nav>
@@ -20,15 +20,17 @@
         </div>
     </section>
     <section class="formData">
-        <article>
-            <h2 class="drop">RELLENA</h2>
+        <article class="fillout">
+            <h2 class="drop">RELLENA
+                <!-- <button>Holi</button> -->
+            </h2>
             <form class="form" action="">
                 <label for="imagen">Foto mascota</label>
                 <input type="file" id="imagen" name="imagen" accept="image/*" required>
                 <label for="name">Nombre</label>
                 <input type="text" name="name" id="name" placeholder="nombre mascota" required class="js-name">
                 <label for="age">Edad</label>
-                <input type="number" name="age" id="age" placeholder="0" required>
+                <input type="number" name="age" id="age" placeholder="0" required class="js-age">
                 <label for="sexo">Sexo</label>
                     <select name="sexo" id="sexo" required>
                         <option>elige opción</option>
@@ -53,17 +55,21 @@
                 </div>
                 <label for="email">Email:</label>
                 <input type="email" name="email" id="email" placeholder="example@example.com" required>
-                <input type="submit" name="" id="">
+                <input class="form__btn" type="submit" name="" id="">
             </form>
         </article>
         <article class="share">
-            <h2 class="drop">COMPARTE</h2>
+            <h2 class="drop">COMPARTE
+                <!-- <button>Holi</button> -->
+            </h2>
             <div class="share__create">
                 <button class="share__create--btnCreate">CREAR TARJETA</button>
                 <h4 class="share__create--notice">La tarjeta ha sido creada:</h4>
                 <a class="share__create--url" href="https://adalab.es/">https://adalab.es/</a>
                 <button class="share__create--twitter">
-                    <a href="https://adalab.es/">Compartir en Twitter</a>
+                    <a class="linktw" href="https://adalab.es/">
+                        Compartir en Twitter 
+                    </a>
                 </button>
             </div>
         </article>
