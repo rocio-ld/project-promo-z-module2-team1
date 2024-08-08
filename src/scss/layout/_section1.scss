@@ -9,14 +9,16 @@
     &__title {
     font-family: $font;
     color: rgb(116,76,36);
-    font-size: 32px;
+    font-size: 50px;
     font-weight: bold;
     text-align: center;
+    width: 100vh;
   }
     &__title2 {
       font-family: $font;
       color: rgb(116,76,36);
       text-align: center;
+      width: 100vh;
     }
       &__parrafo {
         padding: 15px;
