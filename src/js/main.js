@@ -18,6 +18,7 @@ function handleInputName () {
 }
 nameInput.addEventListener ('input', handleInputName);
 
+nameInput.addEventListener ('input', handleInputName);
 function handleInputAge () {
     const valueAge = ageInput.value;
     ageCard.innerHTML = valueAge + '' + `años`;
@@ -29,3 +30,4 @@ function handleInputSex () {
     sexCard.innerHTML=valueSex;
 }
 sexInput.addEventListener ('input', handleInputSex);
+-
