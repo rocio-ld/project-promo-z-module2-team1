@@ -1,27 +1,29 @@
-.photo{
-  background-image: './images/grupo-perros.jpg';
-  height: 100vh;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  position: relative;
+.divsection {
+
+
+    &__img {
+      width: 100vh;
     }
+  
 
+    &__title {
+    font-family: $font;
+    color: rgb(116,76,36);
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+  }
+    &__title2 {
+      font-family: $font;
+      color: rgb(116,76,36);
+      text-align: center;
+    }
+      &__parrafo {
+        padding: 15px;
+        font-family: $font;
+        color: rgb(116,76,36);
+      }
+      
+} 
 
-  .title {
-    display: flex;
-    font-size: 3em;
-    padding: 20px;
-    box-sizing: border-box;
-    position: absolute;  text-align: center;
-    transform: translate();
-    margin-top: 10px;
-  }
-
-  .title2 {
-    padding: 15px;
-  }
-  .texto {
-    padding: 20px;
-    font-size: 20px;
-  }
+ 
