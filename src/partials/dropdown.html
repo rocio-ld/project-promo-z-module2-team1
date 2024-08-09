@@ -13,10 +13,10 @@
                 <ul class="card__details">
                     <li class="card__details js-sex-card">M/F</li>
                     <li class="card__details js-size-card">Tamaño</li>
-                    <li class="card__details js-castrate-card">C/NC</li>
+                    <li class="card__details js-castrate-card">C/No</li>
                 </ul>
             </nav>
-            <p class="card__email">estoescorreoprueba@gmail.com</p>
+            <p class="card__email js-mail-card">estoescorreoprueba@gmail.com</p>
         </div>
     </section>
     <section class="formData">
@@ -26,7 +26,7 @@
             </h2>
             <form class="form" action="">
                 <label for="imagen">Foto mascota</label>
-                <input type="file" id="imagen" name="imagen" accept="image/*" required>
+                <input type="file" id="imagen" name="imagen" accept="image/*" >
                 <label for="name">Nombre</label>
                 <input type="text" name="name" id="name" placeholder="nombre mascota" required class="js-name">
                 <label for="age">Edad</label>
@@ -51,10 +51,10 @@
                 </div>
                 <div>
                     <label for="">No</label>
-                    <input type="radio" name="castrado" id="castrado-no" value="no" required>
+                    <input type="radio" name="castrado" id="castrado-no" value="no" required class="js-castrate-no">
                 </div>
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder="example@example.com" required>
+                <label  for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="example@example.com" required class="js-mail">
                 <input class="form__btn" type="submit" name="" id="">
             </form>
         </article>
