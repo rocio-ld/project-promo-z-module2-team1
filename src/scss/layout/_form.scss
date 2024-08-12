@@ -66,6 +66,7 @@
     border-top: 1px solid rgb(116,76,36);
     border-bottom: 1px solid ;
     margin: 10px;
+    cursor: pointer;
 }
 .form {
     padding: 10px;
@@ -113,4 +114,7 @@
 .linktw {
     text-decoration: none;
     color: rgb(116,76,36);
+}
+.hidden{
+    display: none;
 }

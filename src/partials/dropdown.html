@@ -21,24 +21,22 @@
     </section>
     <section class="formData">
         <article class="fillout">
-            <h2 class="drop">RELLENA
-                <!-- <button>Holi</button> -->
-            </h2>
-            <form class="form" action="">
+            <h2 class="drop js-drop">RELLENA</h2>
+            <form class="form js-form" action="">
                 <label for="imagen">Foto mascota</label>
                 <input type="file" id="imagen" name="imagen" accept="image/*" >
                 <label for="name">Nombre</label>
                 <input type="text" name="name" id="name" placeholder="nombre mascota" required class="js-name">
                 <label for="age">Edad</label>
                 <input type="number" name="age" id="age" placeholder="0" required class="js-age">
-                <label for="sexo">Sexo</label>
-                    <select name="sexo" id="sexo" required class="js-sexo">
+                <label for="sex">Sexo</label>
+                    <select name="sex" id="sex" required class="js-sexo">
                         <option>elige opción</option>
                         <option>Macho</option>
                         <option>Hembra</option>
                     </select>
-                <label for="tamaño">Tamaño</label>
-                    <select name="tamaño" id="tamaño" required class="js-size">
+                <label for="tall">Tamaño</label>
+                    <select name="tall" id="tall" required class="js-size">
                         <option>elige opción</option>
                         <option>Pequeño &lt;10kg</option>
                         <option>Mediano 10-25kg</option>
@@ -46,12 +44,12 @@
                     </select>
                 <h4>¿Está castrado?</h4>
                 <div>
-                    <label for="">Si</label>
-                    <input type="radio" name="castrado" id="castrado-yes" value="yes" required class="js-castrate">
+                    <label for="castrate">Si</label>
+                    <input type="radio" name="castrate" id="castrate-yes" value="Si" required class="js-castrate">
                 </div>
                 <div>
-                    <label for="">No</label>
-                    <input type="radio" name="castrado" id="castrado-no" value="no" required class="js-castrate-no">
+                    <label for="castrate">No</label>
+                    <input type="radio" name="castrate" id="castrate-no" value="No" required class="js-castrate-no">
                 </div>
                 <label  for="email">Email:</label>
                 <input type="email" name="email" id="email" placeholder="example@example.com" required class="js-mail">
@@ -59,10 +57,10 @@
             </form>
         </article>
         <article class="share">
-            <h2 class="drop">COMPARTE
+            <h2 class="drop js-share">COMPARTE
                 <!-- <button>Holi</button> -->
             </h2>
-            <div class="share__create">
+            <div class="share__create js-create-share">
                 <button class="share__create--btnCreate">CREAR TARJETA</button>
                 <h4 class="share__create--notice">La tarjeta ha sido creada:</h4>
                 <a class="share__create--url" href="https://adalab.es/">https://adalab.es/</a>
