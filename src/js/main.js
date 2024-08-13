@@ -59,12 +59,9 @@ function handleInputCastrateNo(){
 castrateNoInput.addEventListener ('input', handleInputCastrateNo);
 
 
-function handleInputMail (){
-    const valueMail = mailInput.value;
-    mailCard.innerHTML = valueMail;
-    
-}
 mailInput.addEventListener('input', handleInputMail);
+
+
 
 
 
