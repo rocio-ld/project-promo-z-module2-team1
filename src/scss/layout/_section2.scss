@@ -65,6 +65,10 @@
             border-color: rgb(116,76,36); 
             border: 2px solid;
             width: 100%;
+            @media(min-width: 768px){
+                width: 25%;
+                height: 180px;
+            }
             
            
             &--h4 {

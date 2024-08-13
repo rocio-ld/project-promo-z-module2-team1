@@ -26,25 +26,46 @@ const create = document.querySelector ('.js-create-share'); //desplegable de com
         nombre-constante-tarjeta.innerHTML = value (valor recogido anteriormente del id);
         } else if (con la estructura anterior pero de los demás id)
 */
+
+const pets = {
+    field1:'',
+    field2:'',
+    field3:'',
+    field4:'',
+    field5:'',
+    field6:'',
+    field7:'',
+    photo:'',
+    
+};
+
 function handleForm(event) {
     const key = event.target.id;
     const value = event.target.value;
 
     if (key === 'name') {
         title.innerHTML = value;
+        pets.field1 = value;
     } else if (key === 'age') {
         ageCard.innerHTML = value;
+        pets.field2 = value;
     } else if (key === 'sex') {
         sexCard.innerHTML = value;
+        pets.field3 = value;
     } else if (key === 'tall') {
         sizeCard.innerHTML = value;
+        pets.field4 = value;
     } else if (key === 'castrate-yes') {
         castrateCard.innerHTML = value;
+        pets.field5 = value;
     } else if (key === 'castrate-no') {
         castrateCard.innerHTML = value;
+        pets.field6 = value;
     } else if (key === 'email') {
         mailCard.innerHTML = value;
+        pets.field7 = value;
     }
+    console.log(pets)
 }
 form.addEventListener('input', handleForm);
 
@@ -73,7 +94,7 @@ share.addEventListener('click', handleShare);
 
 
 
-const nameInput = document.querySelector ('.js-name');
+//const nameInput = document.querySelector ('.js-name');
 // const ageInput = document.querySelector ('.js-age');
 // const sexInput = document.querySelector ('.js-sexo');
 // const sizeInput = document.querySelector ('.js-size');
@@ -123,7 +144,7 @@ const nameInput = document.querySelector ('.js-name');
 // castrateNoInput.addEventListener ('input', handleInputCastrateNo);
 
 
-mailInput.addEventListener('input', handleInputMail);
+// mailInput.addEventListener('input', handleInputMail);
 // function handleInputMail (){
 //     const valueMail = mailInput.value;
 //     mailCard.innerHTML = valueMail;
