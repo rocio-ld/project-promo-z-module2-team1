@@ -3,67 +3,108 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <title>Canino Natural</title>
     
-    <link rel="icon" href="./images/favicon.png" />
-    <link rel="stylesheet" href="./assets/main-62015576.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/main-c2e0b4d4.css">
   </head>
+  <body class="backround">
+    <header class="header">
+    <figure class="log">
+        <img class="log__img" src="./images/logo-2.png" alt="logo-header">
+    </figure>
+    <ul class="list">
+        <li ><a class="list__link" href="#">Historia</a></li>
+        <li><a class="list__link" href="#">Contacto</a></li>
+        <li><a class="list__link" href="#">Menú</a></li>
+       
+        
+    </ul>
+<hr class="header__line">     
+</header> 
+    <section>
+  <div class="divsection">
+    <img src="./images/comida_carne.jpg" alt="Nuestras mascotas" class="divsection__img">
+    <h1 class="divsection__title"> MEJOR COMIDA PARA TU PERRO</h1>
+    <h2 class="divsection__title2">Dejate asesorar por nuestros expertos</h2>
+    <p class="divsection__parrafo">Y llevate lo comida que mas se adapte a tu mascota.</p>
+      
+  </div>
+</section>
+    <section class="section2">
+    <div class="divsection">
+        <article class="divsection__art"></article>
+            <img class="divsection__art--img1" src="./images/quecomen.jpg" alt="¿Qué comen nuestros perros">
+            <h3 class="divsection__art--h3">Necesidades nutricionales de los perros</h3>
+            <p class="divsection__art--p"> La dieta de un perro debe incluir diferentes ingredientes como proteínas, cereales, frutas, verduras y ácidos grasos. Además, debería evitarse en la mayor medida de lo posible el uso de conservantes o colorantes, ya que estos aditivos pueden causar problemas de salud. El porcentaje que se necesita de cada nutriente es diferente</p>
+            </article>   
+        </article>
+        <article class="divsection__art2"></article>
+            <img class="divsection__art--img2" src="./images/composicion.jpg" alt="Composición">
+            <p></p>
+        </article>
 
-  <body>
-    <div class="page">
-      <header class="page__header">
-  <img src="./images/logo-adalab.png" alt="Adalab">
-  <h1>Bienvenidos a Adalab</h1>
-</header>
-
-      <main class="page__main">
-  <h2>Este es el starter kit de Adalab</h2>
-  <p>Lo usamos para aprender:</p>
-  <ul class="main__list">
-    <li>Sass</li>
-    <li>HTML partials</li>
-    <li>Gulp</li>
-    <li>y muchas cosas más</li>
-  </ul>
-  <p>Si quieres saber cúales son las rutas correctas para:</p>
-  <ul class="main__list">
-    <li>
-      una <code class="code">&lt;img /&gt;</code> mira el fichero
-      <code class="code">./src/html/partials/header.html</code>.
-    </li>
-    <li>
-      y para un <code class="code">background-image</code> mira el fichero
-      <code class="code">./src/html/scss/layout/_page.scss</code>.
-    </li>
-  </ul>
-  <p>
-    Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-    <code class="code">./src/html/index.html</code> y
-    <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-    enlaces:
-  </p>
-  <ul class="main__list">
-    <li>
-      <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-    </li>
-    <li>
-      <a class="{=$aClass}" href="./more-info.html">Más info del starter kit</a>
-
-    </li>
-  </ul>
-</main>
-
-      <footer class="page__footer">
-  <small>
-    &copy; Todos los derechos reservados
-    <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-  </small>
-</footer>
+        <div>
+            <h3 class="titlemenu">Los mejores Menús del mercado</h3>
+            <ul class="ulmenu">
+                <li class="ulmenu__li">
+                    <h4 class="ulmenu__li--h4">Menú de pollo</h4>
+                    <p class="ulmenu__li--p">Con un 67% de pollo y un 33% de zanahoria, boniato y otras verduras.</p>
+                </li>
+                <li class="ulmenu__li">
+                    <h4 class="ulmenu__li--h4">Menú de pavo</h4>
+                    <p class="ulmenu__li--p">Con un 65.8% de pavo y un 34.2% de zanahoria, calabaza y otras verduas.</p>
+                </li>
+                <li class="ulmenu__li">
+                    <h4 class="ulmenu__li--h4">Menú de buey</h4>
+                    <p class="ulmenu__li--p">Con un 68% de buey y un 32% de zanahoria, patatas y otras verduras.</p>
+                </li>
+                <li class="ulmenu__li">
+                    <h4 class="ulmenu__li--h4">Menú de Salmón</h4>
+                    <p class="ulmenu__li--p">Con un 43% de salmón, un 25% de pollo y un 32% de  verduras.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="button">
+            <a  href="./form.html" class="button__element" >CREA TU MENÚ</a>
+        </div>
 
     </div>
-    <script src="./js/main.js"></script>
-  </body>
+
+</section>
+    <footer class="footer">
+     <figure class="logo">
+        <img class="logo__can" src="./images/logo-2.png" alt="Can">
+
+     </figure>
+        
+    
+    <div class="container">
+        <p class="container__copy">&copy; 2024 Canino Natural <i class="fas fa-paw"></i></p>
+        <ul>
+            <li class="links">
+                <a class="links__li" href=""  >Contacto</a></li>
+            <li class="links">
+                <a class="links__li" href="">Sobre nosotras</a></li>
+            <li class="links">
+                <a class="links__li" href="">Aviso Legal</a></li>
+            <li class="links"> 
+                <a class="links__li" href="">Cookies</a></li>
+        </ul>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+    </body>
 </html>
