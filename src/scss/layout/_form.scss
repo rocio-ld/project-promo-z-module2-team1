@@ -90,16 +90,22 @@
         gap: 10px;
         color: rgb(116,76,36);
         padding: 10px;
+        
         &--btnCreate {
             padding: 5px;
             color: $background;
             background-color: rgb(116,76,36);
             border: none;
             border-radius: 10px;
+            margin: auto;
+            
+            
+        
         }
         &--url {
             text-decoration: none;
             color: rgb(116,76,36);
+            
         }
         &--twitter {
             padding: 5px;
@@ -126,4 +132,9 @@
     margin: auto;
     padding: 5px;
     border-radius: 10px;
+    }
+
+    .create-card{
+        text-decoration: none;
+        color: beige;
     }
