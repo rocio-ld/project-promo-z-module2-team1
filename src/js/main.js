@@ -15,6 +15,13 @@ const fill = document.querySelector ('.js-drop'); //título de rellena
 const share = document.querySelector ('.js-share'); //título de comparte
 const create = document.querySelector ('.js-create-share'); //desplegable de comparte
 
+// función para cargar una image
+const fr = new FileReader();//
+const fileField = document.querySelector('.js__profile-upload-btn');
+const profileImage = document.querySelector('.js__profile-image');
+
+
+
 /*
 ---Crear evento en el cual si escribes, se cambia automáticamente en la carta
  1. Creado evento sobre el <form> (completo)
@@ -80,19 +87,18 @@ function handleShare (){
 share.addEventListener('click', handleShare);
 
 
+function getImage(e){
+    const myFile = e.currentTarget.files[0];
+    fr.addEventListener('load', writeImage);
+    fr.readAsDataURL(myFile);
+}
+function writeImage(){
+    console.log(fr.result);
+    profileImage.src = fr.result;
+    
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+fileField.addEventListener('change', getImage);
 
 //const nameInput = document.querySelector ('.js-name');
 // const ageInput = document.querySelector ('.js-age');
@@ -151,7 +157,6 @@ share.addEventListener('click', handleShare);
     
 // }
 // mailInput.addEventListener('input', handleInputMail);
-
 
 
 
