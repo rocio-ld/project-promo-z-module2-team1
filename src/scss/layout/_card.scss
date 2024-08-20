@@ -1,0 +1,53 @@
+.finalView {
+    height: 100vh;
+    background-color: $background;
+    color: $background;
+    font-family: $font;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10px;
+    gap: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    @media (min-width: 768px){
+        order:2;        
+    }
+}
+.finalCard {
+    background-color:  rgb(116,76,36);
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    &__pet {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &--photo {
+            width: 200px;
+            border: 1px solid rgb(116,76,36);
+            border-radius: 20px;
+        }
+    }
+    &__details {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+    }
+    &__email {
+        text-align: center;
+    }
+}
+.linktw {
+    text-decoration: none;
+    color: rgb(116,76,36);
+    padding: 5px;
+    padding: 5px;
+    background-color: $background;
+    border-radius: 10px;
+    border-color: 1px solid rgb(116,76,36);
+}
