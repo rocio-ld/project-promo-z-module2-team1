@@ -22,6 +22,10 @@ const profileImage = document.querySelector('.js__profile-image');
 
 
 
+
+
+
+
 /*
 ---Crear evento en el cual si escribes, se cambia automáticamente en la carta
  1. Creado evento sobre el <form> (completo)
@@ -99,6 +103,9 @@ function writeImage(){
 }
 
 fileField.addEventListener('change', getImage);
+
+
+
 
 //const nameInput = document.querySelector ('.js-name');
 // const ageInput = document.querySelector ('.js-age');
