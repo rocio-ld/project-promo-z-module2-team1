@@ -11,8 +11,9 @@
     padding-left: 40px;
     padding-right: 40px;
     @media (min-width: 768px){
-        order:2;        
-    }
+        order:2;  
+   
+}
 }
 .finalCard {
     background-color:  rgb(116,76,36);
@@ -25,10 +26,16 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        @media (min-width: 768px){
+            font-size: 20px       
+        }
         &--photo {
             width: 200px;
             border: 1px solid rgb(116,76,36);
             border-radius: 20px;
+            @media (min-width: 768px){
+                width: 250px;        
+            }
         }
     }
     &__details {
@@ -37,9 +44,15 @@
         flex-direction: row;
         justify-content: center;
         gap: 30px;
+        @media (min-width: 768px){
+            font-size: 20px;       
+        }
     }
     &__email {
         text-align: center;
+        @media (min-width: 768px){
+            font-size: 20px;        
+        }
     }
 }
 .linktw {

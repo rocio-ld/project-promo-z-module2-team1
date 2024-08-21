@@ -15,10 +15,7 @@ const fill = document.querySelector ('.js-drop'); //título de rellena
 const share = document.querySelector ('.js-share'); //título de comparte
 const create = document.querySelector ('.js-create-share'); //desplegable de comparte
 
-// función para cargar una image
-const fr = new FileReader();//
-const fileField = document.querySelector('.js__profile-upload-btn');
-const profileImage = document.querySelector('.js__profile-image');
+import "./image";
 
 
 
@@ -91,18 +88,7 @@ function handleShare (){
 share.addEventListener('click', handleShare);
 
 
-function getImage(e){
-    const myFile = e.currentTarget.files[0];
-    fr.addEventListener('load', writeImage);
-    fr.readAsDataURL(myFile);
-}
-function writeImage(){
-    console.log(fr.result);
-    profileImage.src = fr.result;
-    
-}
 
-fileField.addEventListener('change', getImage);
 
 
 

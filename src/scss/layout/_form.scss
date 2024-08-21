@@ -25,7 +25,7 @@
         order:2;        
     }
 }
-.btnReset {
+.reset {
     background-color: rgb(116,76,36);
     font-family: $font;
     color: $background;
@@ -33,6 +33,9 @@
     border-radius: 10px;
     border: none;
     margin: auto;
+    @media (min-width: 768px){
+        font-size: 18px;      
+    }
 }
 .card {
     background-color:  rgb(116,76,36);
@@ -40,6 +43,9 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    @media (min-width: 768px){
+        font-size: 18px;        
+    }
     &__pet {
         list-style: none;
         display: flex;
@@ -68,6 +74,9 @@
     border-bottom: 1px solid ;
     margin: 10px;
     cursor: pointer;
+    @media (min-width: 768px){
+        font-size: 30px;       
+    }
 }
 .form {
     padding: 10px;
@@ -75,12 +84,18 @@
     flex-direction: column;
     gap: 10px;
     color: rgb(116,76,36);
+    @media (min-width: 768px){
+        font-size: 20px;        
+    }
     &__btn {
         margin: auto;
         padding: 5px;
         color: $background;
         background-color: rgb(116,76,36);
         border-radius: 10px;
+        @media (min-width: 768px){
+            font-size: 20px;        
+        }
     }
 }
 .share {
@@ -99,6 +114,9 @@
             border: none;
             border-radius: 10px;
             margin: auto;
+            @media (min-width: 768px){
+                font-size: 20px;     
+            }
             
             
         
