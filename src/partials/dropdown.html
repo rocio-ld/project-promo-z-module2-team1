@@ -4,7 +4,7 @@
         <div class="card">
             <nav>
                 <ul class="card__pet">
-                    <li><img class="card__pet--photo  " src="https://img.freepik.com/foto-gratis/retrato-primer-plano-perro-chihuahua-mirando-otro-lado_23-2148326273.jpg?size=338&ext=jpg" alt=""></li>
+                    <li><img class="card__pet--photo js__profile-image " src="https://img.freepik.com/foto-gratis/retrato-primer-plano-perro-chihuahua-mirando-otro-lado_23-2148326273.jpg?size=338&ext=jpg" alt=""></li>
                     <li><h3 class="js-title">NOMBRE</h3></li>
                     <li><p class="js-age-card">Años</p></li>
                 </ul>
@@ -22,7 +22,7 @@
     <section class="formData">
         <article class="fillout">
             <h2 class="drop js-drop">RELLENA</h2>
-            <form class="form js-form" action="">
+            <form class="form js-form">
                 <label for="imagen" class="btn-img">Foto mascota</label>
                 <input type="file" id="imagen" name="imagen" accept="image/*" class="hidden js__profile-upload-btn js-inputs">
                 <label for="name">Nombre</label>
@@ -53,9 +53,8 @@
                 </div>
                 <label  for="email">Email:</label>
                 <input type="email" name="email" id="email" placeholder="example@example.com" required class="js-inputs">
-                <button class="share__create--btnCreate"> 
-                    <a  class="create-card" href="./card.html">CREAR TARJETA</a>
-                </button>
+                <button class="share__create--btnCreate js-btnCreate">Crear</button>
+                <a class="hidden js-link" href="./cardDetails.html">Ver Tarjeta</a>
                 <button class="reset js-reset">Resetear</button>
             </form>
         </article>

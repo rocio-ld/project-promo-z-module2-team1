@@ -27,6 +27,7 @@ const create = document.querySelector ('.js-create-share'); //desplegable de com
         nombre-constante-tarjeta.innerHTML = value (valor recogido anteriormente del id);
         } else if (con la estructura anterior pero de los demás id)
 */
+let idCard;
 
 const pets = {
     field1:'',
@@ -35,36 +36,33 @@ const pets = {
     field4:'',
     field5:'',
     field6:'',
-    field7:'',
+    field7:'x',
     photo:'',
     
 };
 
 function handleForm(event) {
-    const key = event.target.id;
+    const key = event.target.name;
     const value = event.target.value;
 
     if (key === 'name') {
         title.innerHTML = value;
-        pets.field1 = value;
+        pets.field2 = value;
     } else if (key === 'age') {
         ageCard.innerHTML = value;
-        pets.field2 = value;
+        pets.field1 = parseInt(value);
     } else if (key === 'sex') {
         sexCard.innerHTML = value;
         pets.field3 = value;
     } else if (key === 'tall') {
         sizeCard.innerHTML = value;
         pets.field4 = value;
-    } else if (key === 'castrate-yes') {
+    } else if (key === 'castrate') {
         castrateCard.innerHTML = value;
         pets.field5 = value;
-    } else if (key === 'castrate-no') {
-        castrateCard.innerHTML = value;
-        pets.field6 = value;
     } else if (key === 'email') {
         mailCard.innerHTML = value;
-        pets.field7 = value;
+        pets.field6 = value;
     }
 }
 form.addEventListener('input', handleForm);

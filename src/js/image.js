@@ -11,7 +11,7 @@ function getImage(e){
 function writeImage(){
     console.log(fr.result);
     profileImage.src = fr.result;
-    
+    pets.photo=fr.result;
 }
 
 fileField.addEventListener('change', getImage);
