@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
- 
- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/main-c2e0b4d4.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="stylesheet" href="./assets/main-f4b1d05a.css">
 </head>
 <body>
   <header class="header">
@@ -16,23 +17,21 @@
         <img class="log__img" src="./images/logo-2.png" alt="logo-header">
     </figure>
     <ul class="list">
-        <li ><a class="list__link" href="#">Historia</a></li>
-        <li><a class="list__link" href="#">Contacto</a></li>
-        <li><a class="list__link" href="#">Menú</a></li>
-       
-        
+        <li ><a class="list__link" href="index.html#section1">Inicio</a></li>
+        <li><a class="list__link" href="index.html#section2">Nutrición</a></li>
+        <li><a class="list__link" href="index.html#section3">Menú</a></li>
     </ul>
 <hr class="header__line">     
 </header>
   <div class="dropdown">
     <section class="preview">
-        <input class="btnReset" type="reset" name="" id="">
+       
         <div class="card">
             <nav>
                 <ul class="card__pet">
-                    <li><img class="card__pet--photo" src="https://img.freepik.com/foto-gratis/retrato-primer-plano-perro-chihuahua-mirando-otro-lado_23-2148326273.jpg?size=338&ext=jpg" alt=""></li>
+                    <li><img class="card__pet--photo js__profile-image " src="https://img.freepik.com/foto-gratis/retrato-primer-plano-perro-chihuahua-mirando-otro-lado_23-2148326273.jpg?size=338&ext=jpg" alt=""></li>
                     <li><h3 class="js-title">NOMBRE</h3></li>
-                    <li><p class="js-age-card">10 años</p></li>
+                    <li><p class="js-age-card">Años</p></li>
                 </ul>
             </nav>
             <nav>
@@ -48,21 +47,21 @@
     <section class="formData">
         <article class="fillout">
             <h2 class="drop js-drop">RELLENA</h2>
-            <form class="form js-form" action="">
-                <label for="imagen">Foto mascota</label>
-                <input type="file" id="imagen" name="imagen" accept="image/*" >
+            <form class="form js-form">
+                <label for="imagen" class="btn-img">Foto mascota</label>
+                <input type="file" id="imagen" name="imagen" accept="image/*" class="hidden js__profile-upload-btn js-inputs">
                 <label for="name">Nombre</label>
-                <input type="text" name="name" id="name" placeholder="nombre mascota" required class="js-name">
+                <input type="text" name="name" id="name" placeholder="nombre mascota" required class="js-inputs">
                 <label for="age">Edad</label>
-                <input type="number" name="age" id="age" placeholder="0" required class="js-age">
+                <input type="number" name="age" id="age" placeholder="0" required class="js-inputs">
                 <label for="sex">Sexo</label>
-                    <select name="sex" id="sex" required class="js-sexo">
+                    <select name="sex" id="sex" required class="js-inputs">
                         <option>elige opción</option>
                         <option>Macho</option>
                         <option>Hembra</option>
                     </select>
                 <label for="tall">Tamaño</label>
-                    <select name="tall" id="tall" required class="js-size">
+                    <select name="tall" id="tall" required class="js-inputs">
                         <option>elige opción</option>
                         <option>Pequeño &lt;10kg</option>
                         <option>Mediano 10-25kg</option>
@@ -71,55 +70,46 @@
                 <h4>¿Está castrado?</h4>
                 <div>
                     <label for="castrate">Si</label>
-                    <input type="radio" name="castrate" id="castrate-yes" value="Si" required class="js-castrate">
+                    <input type="radio" name="castrate" id="castrate-yes" value="Castrado" required class="js-inputs">
                 </div>
                 <div>
                     <label for="castrate">No</label>
-                    <input type="radio" name="castrate" id="castrate-no" value="No" required class="js-castrate-no">
+                    <input type="radio" name="castrate" id="castrate-no" value="No castrado" required class="js-inputs">
                 </div>
                 <label  for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder="example@example.com" required class="js-mail">
-                <input class="form__btn" type="submit" name="" id="">
+                <input type="email" name="email" id="email" placeholder="example@example.com" required class="js-inputs">
+                <button class="share__create--btnCreate js-btnCreate">Crear</button>
+                <a class="hidden js-link" >Ver Tarjeta</a>
+                <button class="reset js-reset">Resetear</button>
             </form>
-        </article>
-        <article class="share">
-            <h2 class="drop js-share">COMPARTE</h2>
-            <div class="share__create js-create-share">
-                <button class="share__create--btnCreate"> 
-                    <a href="./card.html">CREAR TARJETA</a>
-                </button>
-                <h4 class="share__create--notice">La tarjeta ha sido creada:</h4>
-                <a class="share__create--url" href="https://adalab.es/">https://adalab.es/</a>
-                <button class="share__create--twitter">
-                    <a class="linktw" href="https://adalab.es/">
-                        Compartir en Twitter 
-                    </a>
-                </button>
-            </div>
         </article>
     </section>
 </div>
-
+ <!-- <h4 class="share__create--notice js-btn">La tarjeta ha sido creada</h4> -->
   <footer class="footer">
+   <div class=" changes">
      <figure class="logo">
         <img class="logo__can" src="./images/logo-2.png" alt="Can">
 
      </figure>
         
     
-    <div class="container">
+     <div class="container">
         <p class="container__copy">&copy; 2024 Canino Natural <i class="fas fa-paw"></i></p>
-        <ul>
+        <ul class="container__copy--ul">
             <li class="links">
                 <a class="links__li" href=""  >Contacto</a></li>
             <li class="links">
-                <a class="links__li" href="">Sobre nosotras</a></li>
+                <a class="links__li" href="https://sandrarolgom.github.io/project-promo-z-module-team1/">Sobre nosotras</a></li>
             <li class="links">
-                <a class="links__li" href="">Aviso Legal</a></li>
+                <a class="links__li" href="https://www.aepd.es/politica-de-privacidad-y-aviso-legal">Aviso Legal</a></li>
             <li class="links"> 
-                <a class="links__li" href="">Cookies</a></li>
+                <a class="links__li" href="https://socialgob.org/mas-informacion-sobre-las-cookies/">Cookies</a></li>
         </ul>
-    </div>
+     </div>
+
+   </div>
+    
 </footer>
 
 
