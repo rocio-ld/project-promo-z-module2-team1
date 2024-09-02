@@ -2,7 +2,7 @@ const btnCreate = document.querySelector ('.js-btnCreate');
 const linkCard= document.querySelector ('.js-link');
 const handleCreateCard=(ev)=>{
     ev.preventDefault();
-    fetch('https://dev.adalab.es/api/info/data',{
+    fetch('https://dev.adalab.es/api/info/data', {
         method: 'POST',
         body: JSON.stringify(pets),
         headers: {
@@ -20,6 +20,4 @@ const handleCreateCard=(ev)=>{
         }
     });
 };
-
-
 btnCreate.addEventListener('click', handleCreateCard);

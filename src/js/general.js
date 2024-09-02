@@ -5,6 +5,7 @@ console.log('>> Ready :)');
 //llamar al input
 
 const title= document.querySelector ('.js-title');
+const titleCard = document.querySelector('.js-title-card');
 const ageCard = document.querySelector ('.js-age-card');
 const sexCard = document.querySelector ('.js-sex-card');
 const sizeCard = document.querySelector ('.js-size-card');
@@ -36,7 +37,6 @@ const pets = {
     field4:'',
     field5:'',
     field6:'',
-    field7:'x',
     photo:'',
     
 };
