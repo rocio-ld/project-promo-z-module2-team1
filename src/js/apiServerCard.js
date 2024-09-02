@@ -19,6 +19,7 @@ const sexCard = document.querySelector ('.js-sex-card');
 const sizeCard = document.querySelector ('.js-size-card');
 const castrateCard = document.querySelector ('.js-castrate-card');
 const mailCard = document.querySelector ('.js-mail-card');
+const inputTall= document.querySelector ('.js-selectInput');
 
 const urlParam= new URLSearchParams(window.location.search); //esto nos va a dar un objeto
 const id= urlParam.get('id');
@@ -35,5 +36,17 @@ fetch (`https://dev.adalab.es/api/info/${id}`)
     sizeCard.innerHTML = dataCard.data.field4;
     castrateCard.innerHTML = dataCard.data.field5;
     mailCard.innerHTML = dataCard.data.field6;
+    console.log(sizeCard);
+    const paragraphResult= document.querySelector('.js-result');
+    const selectValue= inputTall.value;
+    /*if(selectValue === 'small'){
+        
+        const result= document.createElement ('p')
+        const text= document.createTextNode ('Menú Pavo')
+        result.appendChild (text)
+        paragraphResult.appendChild(result)
+       
+
+    }*/
 });
 
