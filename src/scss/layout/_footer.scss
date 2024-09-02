@@ -7,14 +7,12 @@
     background-color: $font-color;
     padding-bottom: 34px;
     gap:10px
-     
-     
        
-    }
+ }
 
 
 
-    .logo{
+ .logo{
         width:150px;
         padding-top: 20px;
         
@@ -26,7 +24,7 @@
             
         }   
         
-    }
+ }
     
 .changes{
     @media(min-width: 768px){
@@ -54,27 +52,32 @@
         margin-top: 10px;
        
     }
-    &--ul{
-        @media(min-width: 768px){
-            // display: inline;
-            flex-direction: row;
+    
             
-            
-        }
-        
+         
     }
+        
+    
     
 
     
-    }
+
 
     .links{
         list-style: none;
        
         &__li{
+            
             text-decoration: none;
             font-size: 16px;
             color: beige;
+            @media(min-width: 768px){
+                display: inline;
+               margin-right: 0;
+               margin-bottom: 10px;
+               
+               
+           }
             
         }
        
