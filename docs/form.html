@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-  <link rel="stylesheet" href="./assets/main-f4b1d05a.css">
+  <link rel="stylesheet" href="./assets/main-be95360d.css">
 </head>
 <body>
   <header class="header">
@@ -25,7 +25,6 @@
 </header>
   <div class="dropdown">
     <section class="preview">
-       
         <div class="card">
             <nav>
                 <ul class="card__pet">
@@ -48,7 +47,7 @@
         <article class="fillout">
             <h2 class="drop js-drop">RELLENA</h2>
             <form class="form js-form">
-                <label for="imagen" class="btn-img">Foto mascota</label>
+                <label for="imagen" class="form__btnImage">Foto mascota</label>
                 <input type="file" id="imagen" name="imagen" accept="image/*" class="hidden js__profile-upload-btn js-inputs">
                 <label for="name">Nombre</label>
                 <input type="text" name="name" id="name" placeholder="nombre mascota" required class="js-inputs">
@@ -61,11 +60,11 @@
                         <option>Hembra</option>
                     </select>
                 <label for="tall">Tamaño</label>
-                    <select name="tall" id="tall" required class="js-inputs">
-                        <option>elige opción</option>
-                        <option>Pequeño &lt;10kg</option>
-                        <option>Mediano 10-25kg</option>
-                        <option>Hembra >25kg</option>
+                    <select name="tall" id="tall" required class="js-inputs js-selectInput">
+                        <option value="">elige opción</option>
+                        <option value="small">Pequeño &lt;10kg</option>
+                        <option value="medium">Mediano 10-25kg</option>
+                        <option value="big">Grande >25kg</option>
                     </select>
                 <h4>¿Está castrado?</h4>
                 <div>
@@ -78,16 +77,17 @@
                 </div>
                 <label  for="email">Email:</label>
                 <input type="email" name="email" id="email" placeholder="example@example.com" required class="js-inputs">
-                <button class="share__create--btnCreate js-btnCreate">Crear</button>
-                <a class="hidden js-link" >Ver Tarjeta</a>
-                <button class="reset js-reset">Resetear</button>
+            <div class="form__buttons">
+                <button class="form__buttons--btnCreate js-btnCreate">Crear</button>
+                <a class="hidden js-link btn-card" >Ver Tarjeta</a>
+                <button class="form__buttons--reset js-reset">Resetear</button>
+            </div>
             </form>
         </article>
     </section>
 </div>
- <!-- <h4 class="share__create--notice js-btn">La tarjeta ha sido creada</h4> -->
+
   <footer class="footer">
-   <div class=" changes">
      <figure class="logo">
         <img class="logo__can" src="./images/logo-2.png" alt="Can">
 
@@ -103,12 +103,15 @@
                 <a class="links__li" href="https://sandrarolgom.github.io/project-promo-z-module-team1/">Sobre nosotras</a></li>
             <li class="links">
                 <a class="links__li" href="https://www.aepd.es/politica-de-privacidad-y-aviso-legal">Aviso Legal</a></li>
-            <li class="links"> 
-                <a class="links__li" href="https://socialgob.org/mas-informacion-sobre-las-cookies/">Cookies</a></li>
+            
         </ul>
      </div>
+     <div>
+        <p class="links"> 
+            <a class="links__li" href="https://socialgob.org/mas-informacion-sobre-las-cookies/">Cookies</a></p>
+     </div>
 
-   </div>
+ 
     
 </footer>
 
