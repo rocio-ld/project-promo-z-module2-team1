@@ -43,7 +43,7 @@
         
       
         }
-            
+                           
         }
 
 .ulmenu {
@@ -127,5 +127,14 @@
             font-size: 20px;
         }
 
+    }
+}
+.divsection2 {
+    @media (min-width: 768px){
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
     }
 }

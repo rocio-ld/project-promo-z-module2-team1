@@ -5,6 +5,7 @@ console.log('>> Ready :)');
 //llamar al input
 
 const title= document.querySelector ('.js-title');
+const titleCard = document.querySelector('.js-title-card');
 const ageCard = document.querySelector ('.js-age-card');
 const sexCard = document.querySelector ('.js-sex-card');
 const sizeCard = document.querySelector ('.js-size-card');
@@ -14,8 +15,6 @@ const form = document.querySelector ('.js-form');
 const fill = document.querySelector ('.js-drop'); //título de rellena
 const share = document.querySelector ('.js-share'); //título de comparte
 const create = document.querySelector ('.js-create-share'); //desplegable de comparte
-
-
 /*
 ---Crear evento en el cual si escribes, se cambia automáticamente en la carta
  1. Creado evento sobre el <form> (completo)
@@ -36,10 +35,19 @@ const pets = {
     field4:'',
     field5:'',
     field6:'',
-    field7:'x',
     photo:'',
     
 };
+
+const renderSizePreview = (data)=> {
+    if (data === 'small'){
+        sizeCard.innerHTML = `Pequeño &lt;10kg`;
+    } else if (data === 'medium'){
+        sizeCard.innerHTML = `Mediano 10-25kg`;
+    } else if(data === 'big'){
+        sizeCard.innerHTML = `Grande >25kg`;
+    }
+}
 
 function handleForm(event) {
     const key = event.target.name;
@@ -55,8 +63,8 @@ function handleForm(event) {
         sexCard.innerHTML = value;
         pets.field3 = value;
     } else if (key === 'tall') {
-        sizeCard.innerHTML = value;
         pets.field4 = value;
+        renderSizePreview(pets.field4)
     } else if (key === 'castrate') {
         castrateCard.innerHTML = value;
         pets.field5 = value;
@@ -71,7 +79,6 @@ function handleFill (){
     form.classList.toggle ('hidden');
 }
 fill.addEventListener('click', handleFill);
-
 
 
 
