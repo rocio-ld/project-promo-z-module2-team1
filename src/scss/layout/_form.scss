@@ -26,12 +26,12 @@
     }
 }
 .reset {
-    background-color: rgb(116,76,36);
+    background-color: beige;
     font-family: $font;
-    color: $background;
+    color: rgb(116,76,36);
     padding: 5px;
     border-radius: 10px;
-    border: none;
+    border: rgb(116,76,36) solid 1px;
     margin: auto;
     @media (min-width: 768px){
         font-size: 18px;      
@@ -139,4 +139,27 @@
     .create-card{
         text-decoration: none;
         color: beige;
+    }
+
+    .btn-card{
+        background-color: rgb(116,76,36);
+        font-family: $font;
+        color: $background;
+        padding: 5px;
+        border-radius: 10px;
+        border: none;
+        margin: auto;
+    @media (min-width: 768px){
+        font-size: 18px;      
+    }
+    }
+    .botons {
+        display:flex;
+        flex-direction: column;
+        gap: 20px;
+        @media (min-width: 768px){
+            flex-direction: row; 
+            gap: 30px;  
+            padding-top:25px;  
+        }
     }
