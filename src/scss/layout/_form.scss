@@ -140,3 +140,8 @@
         text-decoration: none;
         color: beige;
     }
+.fillout {
+     @media (min-width: 768px){
+        width: 300px;
+     }
+}
