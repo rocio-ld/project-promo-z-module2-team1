@@ -48,7 +48,11 @@ const renderCard = (data)=>{
     renderSize(data.field4);
     console.log(sizeCard);
     if(data.field4 === 'small'){
-        paragraphResult.innerHTML = 'Menú Pavo';
+        paragraphResult.innerHTML = 'El menú ideal para tu perro es el <b>Menú Pavo<b>';
+    } else if(data.field4 === 'medium'){
+        paragraphResult.innerHTML = 'El menú ideal para tu perro es el <b>Menú Pollo<b>';
+    } else if(data.field4 === 'big'){
+        paragraphResult.innerHTML = 'El menú ideal para tu perro es el <b>Menú Salmón<b>';
     }
 }
 fetch (`https://dev.adalab.es/api/info/${id}`)

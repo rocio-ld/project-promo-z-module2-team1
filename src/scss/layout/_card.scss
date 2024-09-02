@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding-top: 10px;
     gap: 20px;
     padding-left: 100px;
@@ -22,13 +23,17 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    width: 300px;
+    @media (min-width: 768px){
+        width: 400px;
+    }
     &__pet {
         list-style: none;
         display: flex;
         flex-direction: column;
         align-items: center;
         @media (min-width: 768px){
-            font-size: 24px       
+            font-size: 24px;
         }
         &--photo {
             width: 200px;
@@ -64,4 +69,7 @@
     background-color: $background;
     border-radius: 10px;
     border-color: 1px solid rgb(116,76,36);
+}
+.resultMenu {
+    color:rgb(116,76,36);
 }

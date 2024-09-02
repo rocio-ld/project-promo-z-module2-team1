@@ -22,19 +22,7 @@
     padding-left: 40px;
     padding-right: 40px;
     @media (min-width: 768px){
-        order:2;        
-    }
-}
-.reset {
-    background-color: rgb(116,76,36);
-    font-family: $font;
-    color: $background;
-    padding: 5px;
-    border-radius: 10px;
-    border: none;
-    margin: auto;
-    @media (min-width: 768px){
-        font-size: 18px;      
+        order:2;   
     }
 }
 .card {
@@ -43,6 +31,8 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    width: 300px;
+    margin: auto;
     @media (min-width: 768px){
         font-size: 18px;        
     }
@@ -68,6 +58,13 @@
         text-align: center;
     }
 }
+.fillout {
+    width:300px;
+    margin: auto;
+    @media (min-width: 768px){
+       width: 500px;
+    }
+}
 .drop {
     color: rgb(116,76,36);
     border-top: 1px solid rgb(116,76,36);
@@ -87,26 +84,23 @@
     @media (min-width: 768px){
         font-size: 20px;        
     }
-    &__btn {
+    &__btnImage{
+        color: beige;
+        background-color: rgb(116,76,36);
+        text-align: center;
         margin: auto;
         padding: 5px;
-        color: $background;
-        background-color: rgb(116,76,36);
         border-radius: 10px;
-        @media (min-width: 768px){
-            font-size: 20px;        
         }
-    }
-}
-.share {
-    &__create {
-        display: flex;
+    &__buttons {
+        display:flex;
         flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        color: rgb(116,76,36);
-        padding: 10px;
-        
+        gap: 20px;
+        @media (min-width: 768px){
+            flex-direction: row; 
+            gap: 30px;  
+            padding-top:25px;  
+        }
         &--btnCreate {
             padding: 5px;
             color: $background;
@@ -117,31 +111,40 @@
             @media (min-width: 768px){
                 font-size: 20px;     
             }
-            
-            
-        
+        }
+        &--reset {
+            background-color: beige;
+            font-family: $font;
+            color: rgb(116,76,36);
+            padding: 5px;
+            border-radius: 10px;
+            border: rgb(116,76,36) solid 1px;
+            margin: auto;
+            @media (min-width: 768px){
+                font-size: 18px;      
+            }
         }
     }
 }
 .hidden{
     display: none;
 }
-
-.btn-img{
+.create-card{
+    text-decoration: none;
     color: beige;
+    }
+.btn-card{
     background-color: rgb(116,76,36);
-    text-align: center;
-    margin: auto;
+    font-family: $font;
+    color: $background;
     padding: 5px;
     border-radius: 10px;
+    border: none;
+    margin: auto;
+    @media (min-width: 768px){
+        font-size: 18px;      
     }
-
-    .create-card{
-        text-decoration: none;
-        color: beige;
-    }
-.fillout {
-     @media (min-width: 768px){
-        width: 300px;
-     }
 }
+    
+
+    
